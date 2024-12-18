@@ -1,0 +1,136 @@
+/* General styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f9f9f9; /* Soft background for a lighter feel */
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 10px;
+}
+
+/* Container */
+.container {
+    text-align: left;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px;
+    margin-top: 20px; /* Ensures space at the top */
+    margin-bottom: 20px; /* Prevents content from touching the bottom */
+}
+
+/* Headline */
+.headline {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #ec4899; /* Adding pink color */
+    margin-bottom: 15px;
+    line-height: 1.4;
+}
+
+/* Subheadline */
+.subheadline {
+    font-size: 1.2rem;
+    color: #6b7280; /* Softer gray for the subheading */
+    margin-bottom: 15px;
+    font-weight: 600;
+    line-height: 1.3;
+}
+
+/* Text */
+.text {
+    font-size: 1rem;
+    color: #6b7280;
+    margin-bottom: 20px;
+    line-height: 1.5;
+    text-align: justify; /* Justifies the text for a cleaner look */
+}
+
+/* Benefit Snippets */
+.benefits {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.benefit {
+    background-color: #fdfdfe;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.benefit:hover {
+    transform: translateY(-5px); /* Subtle hover effect */
+}
+
+.benefit h3 {
+    font-size: 1.1rem;
+    color: #ec4899; /* Pink color for benefit titles */
+    font-weight: 600;
+}
+
+.benefit p {
+    font-size: 0.95rem;
+    color: #6b7280;
+    line-height: 1.4;
+}
+
+/* Button */
+.button {
+    text-decoration: none;
+    padding: 12px 30px;
+    background-color: #ec4899; /* Using pink for the button */
+    color: #fff;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    display: inline-block;
+    font-weight: 600;
+    transition: background-color 0.3s, transform 0.3s ease;
+    text-align: center;
+}
+
+.button:hover {
+    background-color: #d72d79; /* Slightly darker pink on hover */
+    transform: scale(1.05); /* Slight grow effect */
+}
+
+/* Responsive design */
+@media (max-width: 480px) {
+    .headline {
+        font-size: 1.6rem;
+    }
+
+    .subheadline {
+        font-size: 1rem;
+    }
+
+    .text {
+        font-size: 0.9rem;
+    }
+
+    .benefit h3 {
+        font-size: 1rem;
+    }
+
+    .benefit p {
+        font-size: 0.85rem;
+    }
+
+    .button {
+        padding: 10px 25px;
+        font-size: 1rem;
+    }
+}
